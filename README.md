@@ -41,18 +41,22 @@ I visualized the trends in churn, tenure, contract type, and feature correlation
 
 ### 1. Customer Churn Distribution
 ![Project Screenshot](https://github.com/NhlakaniphoMdletshe/Telco-Customer-Churn-Analysis/blob/main/images/img1.png)
+
 Most customers remained, but a significant portion of them churned. This imbalance may affect model performance.
 
 ### 2. Tenure Distribution by Churn
 ![Project Screenshot](https://github.com/NhlakaniphoMdletshe/Telco-Customer-Churn-Analysis/blob/main/images/img2.png)
+
 Customers who churn generally have shorter tenure, highlighting the importance of early retention strategies.
 
 ### 3. Contract Type vs Churn
 ![Project Screenshot](https://github.com/NhlakaniphoMdletshe/Telco-Customer-Churn-Analysis/blob/main/images/img3.png)
+
 Month-to-month contract holders are at the highest risk of churn, whereas 1-year and 2-year contracts show lower churn.
 
 ### 4. Feature Correlation Heatmap
 ![Project Screenshot](https://github.com/NhlakaniphoMdletshe/Telco-Customer-Churn-Analysis/blob/main/images/img4.png)
+
 - Positive correlation between `MonthlyCharges` and churn suggests high charges may influence leaving.  
 - Strong correlation between `tenure` and `TotalCharges` is expected; longer tenure equals higher total charges.
 
@@ -77,11 +81,13 @@ I trained four models:
 
 ### Metrics Visualization
 ![Project Screenshot](https://github.com/NhlakaniphoMdletshe/Telco-Customer-Churn-Analysis/blob/main/images/img6.png)
+
 - Random Forest and XGBoost provide the best balance of F1 and ROC-AUC.  
 - Logistic Regression is strong in interpretability but slightly lower in predictive power.
 
 ### Confusion Matrix Example (Random Forest)
 ![Project Screenshot](https://github.com/NhlakaniphoMdletshe/Telco-Customer-Churn-Analysis/blob/main/images/img7.png)
+
 The model correctly identifies most churned customers while keeping false positives low. This is important for targeting retention campaigns efficiently.
 
 ## Key Insights
