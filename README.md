@@ -41,5 +41,73 @@ I visualized the trends in churn, tenure, contract type, and feature correlation
 
 ### 1. Customer Churn Distribution
 ![Project Screenshot](https://github.com/NhlakaniphoMdletshe/Telco-Customer-Churn-Analysis/blob/main/images/img1.png)
+Most customers remained, but a significant portion of them churned. This imbalance may affect model performance.
+
+### 2. Tenure Distribution by Churn
+![Project Screenshot](https://github.com/NhlakaniphoMdletshe/Telco-Customer-Churn-Analysis/blob/main/images/img2.png)
+Customers who churn generally have shorter tenure, highlighting the importance of early retention strategies.
+
+### 3. Contract Type vs Churn
+![Project Screenshot](https://github.com/NhlakaniphoMdletshe/Telco-Customer-Churn-Analysis/blob/main/images/img3.png)
+Month-to-month contract holders are at the highest risk of churn, whereas 1-year and 2-year contracts show lower churn.
+
+### 4. Feature Correlation Heatmap
+![Project Screenshot](https://github.com/NhlakaniphoMdletshe/Telco-Customer-Churn-Analysis/blob/main/images/img4.png)
+- Positive correlation between `MonthlyCharges` and churn suggests high charges may influence leaving.  
+- Strong correlation between `tenure` and `TotalCharges` is expected; longer tenure equals higher total charges.
+
+## Modeling Approach
+I trained four models:
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- XGBoost
+
+### Metrics for evaluation:
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- ROC-AUC
+- Confusion Matrix
+
+## Model Evaluation & Comparison
+### Performance Table
+![Project Screenshot](https://github.com/NhlakaniphoMdletshe/Telco-Customer-Churn-Analysis/blob/main/images/img5.png)
+
+### Metrics Visualization
+![Project Screenshot](https://github.com/NhlakaniphoMdletshe/Telco-Customer-Churn-Analysis/blob/main/images/img6.png)
+- Random Forest and XGBoost provide the best balance of F1 and ROC-AUC.  
+- Logistic Regression is strong in interpretability but slightly lower in predictive power.
+
+### Confusion Matrix Example (Random Forest)
+![Project Screenshot](https://github.com/NhlakaniphoMdletshe/Telco-Customer-Churn-Analysis/blob/main/images/img7.png)
+The model correctly identifies most churned customers while keeping false positives low. This is important for targeting retention campaigns efficiently.
+
+## Key Insights
+- Month-to-month contract holders churn more frequently.  
+- Fiber optic internet users have higher churn than DSL.  
+- Customers within the first year are at the highest churn risk.  
+- Electronic check payment users show higher churn.  
+- Longer tenure and multi-year contracts reduce churn probability.
+
+## Recommendations
+- **Incentivize long-term contracts:** Offer discounts or benefits for 1-year and 2-year plans.  
+- **Bundle services:** Combine internet and security services to increase stickiness.  
+- **Target high-risk segments:** Early intervention campaigns for new customers, fiber users, and electronic check payers.  
+- **Monitor metrics:** Continuously track churn rates and model performance to adapt strategies.
+
+## Clarifying Questions & Assumptions
+**Questions for Stakeholders:**  
+- How is churn defined? Temporary suspensions or permanent departures?  
+- How often should the model be retrained?
+
+**Assumptions & Caveats:**  
+- Missing `TotalCharges` filled with median.  
+- Models trained on historical data; future trends may differ.  
+- Correlations indicate trends but not causation.
+
+
+
 
 
