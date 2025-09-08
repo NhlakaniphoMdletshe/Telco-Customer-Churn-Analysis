@@ -40,6 +40,6 @@ The dataset has **7,043 customer records** with features like:
 I visualized the trends in churn, tenure, contract type, and feature correlations.
 
 ### 1. Customer Churn Distribution
-<img src="Telco_Customer_Churn_Prediction/img1.png" alt="Project Screenshot"/>
+(https://github.com/NhlakaniphoMdletshe/Telco-Customer-Churn-Analysis/blob/main/images/img1.png)
 
 
