@@ -34,7 +34,7 @@ The dataset has **7,043 customer records** with features like:
 - **Customer demographics:** `gender`, `SeniorCitizen`, `Partner`, `Dependents`  
 - **Account info:** `tenure`, `Contract`, `PaymentMethod`, `MonthlyCharges`, `TotalCharges`  
 - **Services:** `PhoneService`, `InternetService`, `OnlineSecurity`, `MultipleLines`  
-- **Target variable:** `Churn` (0 = Stayed, 1 = Left)
+- **Target variable:** `Churn` (Stayed, Left)
 
   ## Exploratory Data Analysis (EDA)
 I visualized the trends in churn, tenure, contract type, and feature correlations.
